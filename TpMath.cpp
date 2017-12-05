@@ -76,13 +76,25 @@ int colonneB;
 
 cout << "Entrez le nombre de ligne pour la matrice 1" << endl;
 cin >> ligneA;
+	while(ligneA > 20){
+		cout << "Maximum 20 svp..." << endl;
+		cin >> ligneA;
+	}
 cout << "Entrez le nombre de colonne de la matrice 1" << endl;
 cin >> colonneA;
+	while(colonneA > 20){
+		cout << "Maximum 20 svp..." << endl;
+		cin >> colonneA;
+	}
 int matrice1[ligneA][colonneA];
 ligneB = colonneA;
 cout << "Le nombre de ligne de la matrice 2 est donc " << colonneA << endl;
 cout << "Entrez le nombre de colonne de la matrice 2" << endl;
 cin >> colonneB;
+	while(colonneB > 20){
+		cout << "Maximum 20 svp..." << endl;
+		cin >> colonneB;
+	}
 int matrice2[ligneB][colonneB];
 int temp;
 int matriceFinal[ligneA][colonneB];
@@ -127,8 +139,16 @@ void reel(){
 	int nombre;
 	cout << "Entrez le nombre de ligne de la matrice" << endl;
 	cin >> ligne;
+		while(ligne > 20){
+		cout << "Maximum 20 svp..." << endl;
+		cin >> ligne;
+	}
 	cout << "Entrez le nombre de colonne" << endl;
 	cin >> colonne;
+		while(colonne > 20){
+		cout << "Maximum 20 svp..." << endl;
+		cin >> colonne;
+	}
 	
 	int matrice[ligne][colonne];
 	cout << "Initisalisation de la matrice";
@@ -153,8 +173,16 @@ void transposition(){
 	int colonne;
 	cout << "Entrez le nombre de lignes" << endl;
 	cin >> ligne;
+		while(ligne > 20){
+		cout << "Maximum 20 svp..." << endl;
+		cin >> ligne;
+	}
 	cout << "Entrez le nombre de colonnes" << endl;
 	cin >> colonne;
+		while(colonne > 20){
+		cout << "Maximum 20 svp..." << endl;
+		cin >> colonne;
+	}
 	int matrice[ligne][colonne];
 	int matriceT[colonne][ligne];
 	cout << "Initialisation de la matrice" << endl;
@@ -184,6 +212,10 @@ void identite(){
 	int ligne;
 	cout << "Entrez le nombre de lignes et colonnes de la matrice identite" << endl;
 	cin >> ligne;
+		while(ligne > 20){
+		cout << "Maximum 20 svp..." << endl;
+		cin >> ligne;
+	}
 	int matriceI[ligne][ligne];
 	for(int i = 0; i < ligne; i++){
 		for(int j = 0; j < ligne; j++){
